@@ -1,0 +1,271 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+
+//Variables
+$primaryColor: #4697B9;
+$secondaryColor: #4951ec;
+$tertiaryColor: #87adf3;
+$textColor: #0B0754;
+
+//Mixin
+@mixin tombol {
+	display: inline-block;
+	color: white;
+	background-color: $primaryColor;
+	border-radius: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+
+}
+
+//Styles
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(../img/bg-yoyoi.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 60vmax;
+}
+
+
+
+//navbar
+.nav-custom {
+	background-color: #0B0754;
+
+	.navbar-brand {
+		img {
+			width: 35px;
+			height: 35px;
+			margin-top: -7px;
+		}
+
+		span {
+			color: $primaryColor;
+			font-weight: 700;
+			font-size: 1.4rem;
+			margin-left: 0.5em;
+		}
+	}
+
+	#navbarNav {
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					color: $primaryColor;
+					font-weight: 500;
+					text-transform: uppercase;
+					margin-left: 2.4em;
+					transition: 0.3s color ease;
+
+					&:hover {
+						font-weight: 700;
+						color: darken($secondaryColor, 50%);
+					}
+				}
+
+				.btn-signup {
+					background-color: $tertiaryColor;
+					color: white;
+					border-radius: 2em;
+					border: 0;
+					padding-left: 1.5em;
+					padding-right: 1.5em;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		margin-top: -1em;
+
+		.navbar-nav {
+			background-color: rgb(231, 231, 231);
+			padding: 1em;
+			margin-left: -1em;
+			margin-top: 0.5em;
+
+		}
+	}
+}
+
+//custom Section
+.custom-section {
+	margin-top: 10em;
+
+	h2 {
+		font-weight: 700;
+		font-size: 4rem;
+		color: $primaryColor;
+		white-space: nowrap;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 2.5rem;
+		color: $tertiaryColor;
+		white-space: nowrap;
+		line-height: 0.5;
+	}
+
+	p {
+		color: $textColor;
+		font-size: 1.1rem;
+		margin-top: 2em;
+	}
+
+	a {
+		margin-top: 2.2em;
+		@include tombol;
+		border: 3px solid transparent;
+		transition: 0.5s ease;
+
+		&:hover {
+			color: $primaryColor;
+			border: 3px solid $primaryColor;
+			background-color: transparent;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		margin-top: 18em;
+		text-align: center;
+
+		h2,
+		h3,
+		p {
+			text-shadow: 1px 1px 1px rgba($textColor, 0.4);
+			opacity: 1.0;
+			margin-top: 15em;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+#artikel-highlights {
+	background-color: #dde8fe;
+	width: 100%;
+
+	.btn-readmore-article {
+		.btn-readmore {
+			@include tombol;
+			margin-top: 3em;
+			border: 3px solid transparent;
+			transition: 0.5s ease;
+
+			&:hover {
+				color: $primaryColor;
+				border: 3px solid $primaryColor;
+				background-color: transparent;
+			}
+		}
+	}
+
+	h2 {
+		color: $textColor;
+		font-weight: 700;
+	}
+
+	.card-shadow {
+		box-shadow: 6px 5px 7px rgba($textColor, 0.4);
+
+		a {
+			display: inline-block;
+			color: white;
+			background-color: $primaryColor;
+			border-radius: 2em;
+			padding: 0.5em 1em;
+			text-decoration: none;
+			font-size: 10pt;
+			margin-bottom: 0.5em;
+			border: 1.5px solid transparent;
+			transition: 0.5s ease;
+
+			&:hover {
+				color: $primaryColor;
+				border: 1.5px solid $primaryColor;
+				background-color: transparent;
+			}
+		}
+
+		img {
+			height: 80%;
+		}
+	}
+}
+
+#konsultasi {
+	h2 {
+		color: $textColor;
+		font-weight: 700;
+	}
+
+	h3 {
+		color: $primaryColor;
+		font-weight: 500;
+		line-height: 0.5;
+		font-size: 18pt;
+	}
+
+	button {
+		@include tombol;
+		border: 1.5px solid transparent;
+		transition: 0.5s ease;
+		margin-top: 1em;
+
+		&:hover {
+			color: $primaryColor;
+			border: 1.5px solid $primaryColor;
+			background-color: transparent;
+		}
+	}
+
+	input,
+	select,
+	textarea {
+		border-color: $primaryColor;
+	}
+}
+
+section {
+	padding-top: 3rem;
+}
+
+footer {
+	background-color: #dde8fe;
+	color: $primaryColor;
+	text-align: center;
+	font-weight: 700;
+
+	a {
+		text-decoration: none;
+		color: $primaryColor;
+	}
+}
+
+#loginAdmin {
+	h5 {
+		font-weight: 700;
+		color: $primaryColor;
+	}
+
+	input {
+		border-color: $primaryColor;
+	}
+
+	.btn-login {
+		@include tombol;
+	}
+}
+
+.nurita {
+	font-size: 10pt;
+}

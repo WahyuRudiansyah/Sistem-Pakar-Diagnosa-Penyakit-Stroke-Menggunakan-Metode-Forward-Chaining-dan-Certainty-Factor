@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/bg-yoyoi.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+}
+
+.nav-custom {
+  background-color: #0B0754;
+}
+
+.nav-custom .navbar-brand img {
+  width: 35px;
+  height: 35px;
+  margin-top: -7px;
+}
+
+.nav-custom .navbar-brand span {
+  color: #4697B9;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.5em;
+}
+
+.nav-custom #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #4697B9;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.nav-custom #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  font-weight: 700;
+  color: #050731;
+}
+
+.nav-custom #navbarNav .navbar-nav .nav-item .btn-signup {
+  background-color: #87adf3;
+  color: white;
+  border-radius: 2em;
+  border: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-custom {
+    margin-top: -1em;
+  }
+  .nav-custom .navbar-nav {
+    background-color: #e7e7e7;
+    padding: 1em;
+    margin-left: -1em;
+    margin-top: 0.5em;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+}
+
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #4697B9;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #87adf3;
+  white-space: nowrap;
+  line-height: 0.5;
+}
+
+.custom-section p {
+  color: #0B0754;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+
+.custom-section a {
+  margin-top: 2.2em;
+  display: inline-block;
+  color: white;
+  background-color: #4697B9;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section a:hover {
+  color: #4697B9;
+  border: 3px solid #4697B9;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 18em;
+    text-align: center;
+  }
+  .custom-section h2,
+  .custom-section h3,
+  .custom-section p {
+    text-shadow: 1px 1px 1px rgba(11, 7, 84, 0.4);
+    opacity: 1.0;
+    margin-top: 15em;
+  }
+  .custom-section h2 {
+    font-size: 2rem;
+  }
+  .custom-section h3 {
+    font-size: 1.5rem;
+  }
+}
+
+#artikel-highlights {
+  background-color: #dde8fe;
+  width: 100%;
+}
+
+#artikel-highlights .btn-readmore-article .btn-readmore {
+  display: inline-block;
+  color: white;
+  background-color: #4697B9;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  margin-top: 3em;
+  border: 3px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#artikel-highlights .btn-readmore-article .btn-readmore:hover {
+  color: #4697B9;
+  border: 3px solid #4697B9;
+  background-color: transparent;
+}
+
+#artikel-highlights h2 {
+  color: #0B0754;
+  font-weight: 700;
+}
+
+#artikel-highlights .card-shadow {
+  -webkit-box-shadow: 6px 5px 7px rgba(11, 7, 84, 0.4);
+          box-shadow: 6px 5px 7px rgba(11, 7, 84, 0.4);
+}
+
+#artikel-highlights .card-shadow a {
+  display: inline-block;
+  color: white;
+  background-color: #4697B9;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 10pt;
+  margin-bottom: 0.5em;
+  border: 1.5px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#artikel-highlights .card-shadow a:hover {
+  color: #4697B9;
+  border: 1.5px solid #4697B9;
+  background-color: transparent;
+}
+
+#artikel-highlights .card-shadow img {
+  height: 80%;
+}
+
+#konsultasi h2 {
+  color: #0B0754;
+  font-weight: 700;
+}
+
+#konsultasi h3 {
+  color: #4697B9;
+  font-weight: 500;
+  line-height: 0.5;
+  font-size: 18pt;
+}
+
+#konsultasi button {
+  display: inline-block;
+  color: white;
+  background-color: #4697B9;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin-top: 1em;
+}
+
+#konsultasi button:hover {
+  color: #4697B9;
+  border: 1.5px solid #4697B9;
+  background-color: transparent;
+}
+
+#konsultasi input,
+#konsultasi select,
+#konsultasi textarea {
+  border-color: #4697B9;
+}
+
+section {
+  padding-top: 3rem;
+}
+
+footer {
+  background-color: #dde8fe;
+  color: #4697B9;
+  text-align: center;
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4697B9;
+}
+
+#loginAdmin h5 {
+  font-weight: 700;
+  color: #4697B9;
+}
+
+#loginAdmin input {
+  border-color: #4697B9;
+}
+
+#loginAdmin .btn-login {
+  display: inline-block;
+  color: white;
+  background-color: #4697B9;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+.nurita {
+  font-size: 10pt;
+}
+/*# sourceMappingURL=main.css.map */
